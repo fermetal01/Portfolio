@@ -1,16 +1,13 @@
 package com.zemoga.Portfolio.services.impl;
 
-import com.zemoga.Portfolio.dto.PortfolioDTO;
 import com.zemoga.Portfolio.dto.StatusDTO;
 import com.zemoga.Portfolio.dto.UserDTO;
-import com.zemoga.Portfolio.model.Portfolio;
 import com.zemoga.Portfolio.services.TwitterService;
-import com.zemoga.Portfolio.services.config.TwitterConfig;
+import com.zemoga.Portfolio.config.TwitterConfig;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import twitter4j.*;
-import twitter4j.conf.ConfigurationBuilder;
 
 import java.util.ArrayList;
 import java.util.List;

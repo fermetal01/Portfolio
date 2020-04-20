@@ -3,22 +3,15 @@ package com.zemoga.Portfolio.service;
 import com.zemoga.Portfolio.dto.PortfolioDTO;
 import com.zemoga.Portfolio.dto.StatusDTO;
 import com.zemoga.Portfolio.dto.UserDTO;
-import com.zemoga.Portfolio.model.Portfolio;
-import com.zemoga.Portfolio.repositories.PortfolioRepository;
-import com.zemoga.Portfolio.services.PortfolioService;
 import com.zemoga.Portfolio.services.TwitterService;
-import com.zemoga.Portfolio.services.config.TwitterConfig;
-import com.zemoga.Portfolio.services.impl.PortfolioServiceImpl;
+import com.zemoga.Portfolio.config.TwitterConfig;
 import com.zemoga.Portfolio.services.impl.TwitterServiceImpl;
-import org.hibernate.service.spi.ServiceException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import twitter4j.Paging;
-import twitter4j.RateLimitStatus;
-import twitter4j.ResponseList;
 import twitter4j.Status;
 
 import java.text.ParsePosition;
@@ -26,7 +19,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
 
 public class TwitterServiceTest {
 

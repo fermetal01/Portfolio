@@ -32,6 +32,10 @@ What things you need to install the software and how to install them
 
 run `mvn clean install` and then `mvn spring-boot:run` to star the application in default `localhost:8080`
 
+## RestAPI testing
+
+Run the application and go to `http://localhost:8080/swagger-ui.html` to check and interact with all the endpoints available to retreive and manipulate data
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
@@ -44,6 +48,7 @@ run `mvn clean install` and then `mvn spring-boot:run` to star the application i
 * [Log4j](https://logging.apache.org/log4j/2.x/) - Used for logging
 * [Mockito](https://site.mockito.org/) - Used for testing mocks
 * [JUnit](https://junit.org/junit5/) - Used for testing
+* [Swagger2](https://junit.org/junit5/) - Used for presenting RestAPI data
 
 ## Authors
 

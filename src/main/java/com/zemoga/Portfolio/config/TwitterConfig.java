@@ -1,4 +1,4 @@
-package com.zemoga.Portfolio.services.config;
+package com.zemoga.Portfolio.config;
 
 import lombok.Getter;
 import org.springframework.context.annotation.Scope;

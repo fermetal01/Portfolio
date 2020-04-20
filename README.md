@@ -45,6 +45,10 @@ run `mvn clean install` and then `mvn spring-boot:run` to star the application i
 * [Mockito](https://site.mockito.org/) - Used for testing mocks
 * [JUnit](https://junit.org/junit5/) - Used for testing
 
+## Development Time
+
+This project was developed in 4 hours 30 minutes.
+
 ## Authors
 
 * **Brayan Perez** - *Initial work* - [fermetal01](https://github.com/fermetal01)

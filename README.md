@@ -50,6 +50,10 @@ Run the application and go to `http://localhost:8080/swagger-ui.html` to check a
 * [JUnit](https://junit.org/junit5/) - Used for testing
 * [Swagger2](https://junit.org/junit5/) - Used for presenting RestAPI data
 
+## Development Time
+
+This project was developed in 4 hours 30 minutes.
+
 ## Authors
 
 * **Brayan Perez** - *Initial work* - [fermetal01](https://github.com/fermetal01)

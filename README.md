@@ -52,7 +52,7 @@ Run the application and go to `http://localhost:8080/swagger-ui.html` to check a
 
 ## Development Time
 
-This project was developed in 4 hours 30 minutes.
+This project was developed in 3 hours 30 minutes.
 
 ## Authors
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="navbar-toggler-icon"></span>
+        </button> <a class="navbar-brand" th:href="@{/portfolio/}">Portfolio APP</a>
+    </nav>
+</head>
+
+<body>
+<div class="container my-5">
+    <div class="container-fluid">
+        <div>
+            <div></div>
+            <div>
+                <a th:href="@{/portfolio/}" class="btn btn-success"> <i class="fa fa-arrow-circle-o-left"></i>&nbsp;Back to List</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <img th:src="${portfolio.imageURL}" class="img-rounded img-responsive img-fluids" width="300" height="300">
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <h4 th:text = "${portfolio.title}"></h4>
+                <p th:text = "${portfolio.description}"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 th:text = "${portfolio.title} + ' s Timeline'"></h4>
+            </div>
+            <div class="col-12">
+                <ul class="list-group">
+                    <ol th:each="status : ${portfolio.statuses}" >
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-4" >
+                                    <div class="row"><img th:src="${status.user.profileImageURL}" class="img-rounded img-responsive img-fluid" width="70" height="70"></div>
+                                    <div class="row"> <b> <a th:text = "${status.user.name}"/> </b> </div>
+                                    <div class="row"><a th:src = "${status.text}" th:text="${status.text}"/></div>
+
+                                </div>
+                                <div class="col-8" >
+                                    <img th:src="${status.mediaURL}" class="img-rounded img-responsive img-fluid" width="200" height="200">
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
